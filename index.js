@@ -85,7 +85,7 @@ function getAnswer(question) {
   switch(question.operation) {
     case 'substraction': return question.number1 - question.number2
     case 'multiplication': return question.number1 * question.number2
-    case 'division': return Math.round(question.number3 / question.number2)
+    case 'division': return Number((question.number3 / question.number2).toFixed(1))
     case 'addition': default: return question.number1 + question.number2
   }
 }

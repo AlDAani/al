@@ -4,8 +4,8 @@
 exports.welcome = () => {
   const greeting = getRandomElement(['Привет', 'Здравствуйте', 'Доброе пожаловать!']);
   return {
-    text: `${greeting}. Я ваш новый учитель математики. Начинаем урок?`,
-    tts: `<speaker audio="alice-music-harp-1.opus">${greeting}. Я ваш новый учитель математики.\nНачинаем урок?`,
+    text: `${greeting}. Я могу проверить ваши математические навыки. Начнём?`,
+    tts: `<speaker audio="alice-music-harp-1.opus">${greeting}. Я могу проверить ваши математические навыки. \nНачнём?`,
     card: {
       type: "BigImage",
       image_id: "1030494/c90774586a5bf8d801f4",
@@ -35,7 +35,7 @@ exports.showMenu = () => {
         {
           image_id: '937455/f302804f29f3c56d4de5',
           title: 'Сложение',
-          description: 'Проверь свои навыки в сложении чисел от 1 до 20',
+          description: 'Проверь свои навыки в сложении чисел',
           button: {
             text: 'Сложение',
             payload: {
@@ -46,7 +46,7 @@ exports.showMenu = () => {
         {
           image_id: '965417/ec8cf4175fcd2f30d582',
           title: 'Вычитание',
-          description: 'Проверь свои навыки в вычитании чисел от 1 до 20',
+          description: 'Проверь свои навыки в вычитании чисел',
           button: {
             text: 'Вычитание',
             payload: {
@@ -57,7 +57,7 @@ exports.showMenu = () => {
         {
           image_id: '965417/5d297b22c8b80ec1dc63',
           title: 'Умножение',
-          description: 'Проверь свои навыки в умножении чисел от 1 до 20',
+          description: 'Проверь свои навыки в умножении чисел',
           button: {
             text: 'Умножение',
             payload: {
@@ -67,8 +67,8 @@ exports.showMenu = () => {
         },
         {
           image_id: '965417/2b4255c4a29bcc305f89',
-          title: 'Деление (в разработке)',
-          description: 'Проверь свои навыки в делении чисел от 1 до 20',
+          title: 'Деление',
+          description: 'Проверь свои навыки в делении чисел',
           button: {
             text: 'Деление',
             payload: {
